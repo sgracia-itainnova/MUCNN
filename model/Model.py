@@ -214,7 +214,7 @@ class Unet(nn.Module):
         ms1 = self.conv_up1(ms)
         # print(ms_up1.shape)
         # input()
-        ms1 = torch.cat((ms_up1, panda1), dim)
+        ms1 = torch.cat((ms1, panda1), dim)
 
         ms2 = self.conv_up2(ms)
 
