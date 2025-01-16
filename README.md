@@ -1,3 +1,30 @@
+# Preparation
+
+### Environment (Salas)
+Create the environment
+```bash
+conda create --name pansharpening python=3.9 -y
+```
+
+```bash
+conda activate pansharpening
+```
+
+Install necessary libraries
+```bash
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0
+```
+
+```bash
+pip install scipy h5py matplotlib opencv-python
+```
+If necessary, downgrade Numpy
+
+```bash
+pip install "numpy<2"
+```
+
+
 ## [SSconv: Explicit Spectral-to-Spatial Convolution for Pansharpening](https://github.com/liangjiandeng/liangjiandeng.github.io/tree/master/papers/2021/mucnn_mm2021.pdf)
 
 **Homepage:** https://liangjiandeng.github.io/
